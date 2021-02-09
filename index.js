@@ -430,6 +430,9 @@ function process_commands_query(query, mapKey, userid) {
             case 'favorites':
                 out = _CMD_FAVORITES;
                 break;
+            case 'quit':
+                    out = _CMD_LEAVE;
+                    break;
             case 'set':
                 switch (args) {
                     case 'favorite':
